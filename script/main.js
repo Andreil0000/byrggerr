@@ -14,8 +14,8 @@ function clickHandler(e) {
       behavior: "smooth"
    });
 }
-// Button Up
 
+// Button Up
 
 window.onscroll = function () { scrollFunction() };
 
@@ -41,6 +41,7 @@ function scrollFunction() {
       document.getElementById('btnUp').className = 'button-up hidden';
    }
 }
+
 // Menu
 
 function openModal() {
