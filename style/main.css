@@ -722,7 +722,7 @@ header {
    }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1001px) {
    .container {
       max-width: 768px;
    }
@@ -738,7 +738,7 @@ header {
    }
 
    .header-item {
-      flex-basis: 75.5%;
+      flex-basis: 78.5%;
    }
 
    .bg {
