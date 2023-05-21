@@ -266,7 +266,7 @@ header {
    font-size: 15px;
    appearance: none;
    flex-basis: 279px;
-   background-image: url(../images/стрелка.svg);
+   background-image: url(../image/стрелка.svg);
    background-size: 12.79px 7.75px;
    background-repeat: no-repeat;
    background-position: 89% center;
@@ -388,6 +388,7 @@ header {
 .footer-box {
    display: flex;
    justify-content: space-between;
+   gap: 20px;
 }
 
 .footer-logo {
@@ -395,23 +396,13 @@ header {
    height: 56px;
 
 }
-
-.footer-item {
-   flex: 0 0 auto;
-   font-family: 'Nunito Sans';
-   font-weight: 800;
-   font-size: 20px;
-   line-height: 0px;
-   text-transform: uppercase;
-
-}
-
 .footer-item h2 {
    font-size: 20px;
    font-weight: 800;
    margin-bottom: 19px;
    text-transform: uppercase;
    margin-bottom: 0;
+   line-height: 1.5;
 }
 
 
@@ -445,7 +436,7 @@ header {
 .footer-item span {
    color: #f8f8f8;
    display: block;
-   margin-bottom: 2px;
+   margin-bottom: 12px;
    font-family: 'Open Sans';
    font-style: normal;
    font-weight: 400;
@@ -712,6 +703,7 @@ header {
    .header-burger {
       display: none;
    }
+
 }
 
 /*Responsive*/
@@ -727,10 +719,11 @@ header {
       max-width: 768px;
    }
 
-   .header-logo {
-      width: 150px;
-      height: 48px;
-      background-size: contain;
+   @media (max-width: 567px) {
+      .header-logo {
+         width: 116px;
+         height: 37px;
+      }
    }
 
    .header-nav {
@@ -742,12 +735,12 @@ header {
    }
 
    .bg {
-      margin-bottom: 72px;
+      margin-bottom: 33px;
    }
 
    .banner-box {
       background-position: -80px center;
-      padding: 100px 40 px 120px;
+      padding: 100px 40px 120px;
    }
 
    .menu-grid {
@@ -787,13 +780,17 @@ header {
    nav {
       display: none;
    }
-}
-
 .header {
    gap: 21px;
 }
-
-@media(max-width: 567px) {
+.menu-other .container {
+   padding-right: 0;
+}
+.button-up.visible{
+   display: none;
+}
+}
+@media(max-width: 765px) {
    .breardcrumbs a {
       font-size: 14px;
    }
@@ -813,9 +810,99 @@ header {
    .banner-box {
       background-position: 17% center;
       padding: 35px 24px 54px;
+      margin-bottom: 40px;
    }
-}
 
+   .menu-title {
+      font-size: 27px;
+   }
+
+   .menu-select {
+      font-size: 12px;
+      flex-basis: 136px;
+      padding: 13px 24px 13px 15px;
+      background-position: 91% center;
+   }
+
+   .menu-header {
+      margin-bottom: 30px;
+   }
+
+   .menu-grid {
+      gap: 25px 15px;
+   }
+
+   .menu-grid-cover {
+      height: 56vw;
+      margin-bottom: 10px;
+   }
+
+   .menu-grid-cover img {
+      height: 100%;
+   }
+
+   .menu-grid-title {
+      font-size: 15px;
+   }
+
+   .menu-grid-price {
+      font-size: 16px;
+      margin-top: 6px;
+      margin-bottom: 14px;
+   }
+
+   .menu-grid-btn {
+      padding: 10px 21px;
+      margin-bottom: 40px;
+   }
+
+   .menu-other {
+      height: 108vw;
+   }
+
+   .menu-other .menu-grid {
+      padding-bottom: 45vw;
+   }
+
+   .menu-other .menu-grid-cover {
+      height: 56vw;
+}
+.menu-other .menu-grid-cover img {
+   height: 100%;
+}
+.menu-other .menu-grid-item {
+   flex: 0 0 38vw;
+}
+.footer {
+   margin-top: 28px;
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+.footer-list+.footer-list-tel{
+display: none;
+}
+.footer-tel{
+  display: block;
+}
+.footer-box{
+ display: grid;
+ grid-template-columns: 30% 70%;
+ grid-template-areas:"logo tel" "link link" "info info";
+ gap:0;
+}
+.footer-item:nth-child(1){
+  grid-area: logo;
+}
+.footer-item:nth-child(2){
+   grid-area: link;
+ }
+ .footer-item:nth-child(3){
+   grid-area:info;
+ }
+ .footer-tel{
+  grid-area:tel;
+ }
+}
 @media(max-width: 360px) {
    .header-logo {
       width: 116px;
@@ -823,7 +910,6 @@ header {
       background-size: contain;
    }
 }
-
 @media(max-width: 320px) {
    .banner-box {
       background-position: 25% center;
