@@ -26,7 +26,7 @@ header {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   flex-basis: 68.5%;
+   flex-basis: 70.5%;
 }
 
 .header-logo {
@@ -36,6 +36,9 @@ header {
    height: 56px;
    background-repeat: no-repeat;
    background-size: cover;
+   margin-left: 5px;
+   margin-top: 1px;
+   margin-top:-4px;
 }
 
 
@@ -77,7 +80,7 @@ header {
    align-items: center;
    background-color: transparent;
    border: none;
-   padding: 0;
+   padding:3;
    gap: 10px;
    cursor: pointer;
 }
@@ -111,7 +114,7 @@ header {
    background-image: url(../image/bg.jpg);
    background-size: cover;
    background-position: center center;
-   padding: 142px 0;
+   padding: 140px 0;
    margin-bottom: 140px;
 }
 
@@ -163,16 +166,15 @@ header {
    line-height: 1.5;
    color: #FAF9F9;
    max-width: 320px;
-   margin: 0 auto;
+   margin: 23px auto;
 }
-
 .banner-box {
    background-image: url(../image/булка\ \(2\).jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: 0 center;
-   padding: 100px 100px 120px;
-   margin-bottom: 80px;
+   padding: 85px 103px 106px;
+   margin-bottom: 81.5px;
 }
 
 .banner-title {
@@ -211,13 +213,12 @@ header {
    border-radius: 14px;
    padding: 5px 19px 5px 17px;
 }
-
 .banner-text {
    color: #FAF9F9;
    font-size: 15px;
    line-height: 1.6;
    font-family: 'Open Sans';
-   max-width: 353px;
+   max-width: 304px;
    margin-top: 0;
    margin-bottom: 35px;
 }
@@ -369,9 +370,9 @@ header {
    margin: 0;
 }
 
-.menu-grid-pcice {
+.menu-grid-price {
    font-weight: 700;
-   font-size: 30px;
+   font-size: 20px;
    color: #979797;
    margin-top: 8px;
    margin-bottom: 22px;
@@ -380,39 +381,48 @@ header {
 .footer {
    background: #1E2F40;
    color: #fff;
-   padding-top: 117px;
+   padding-top:117px;
    padding-bottom: 106px;
    margin-top: 140px;
+   
 }
 
 .footer-box {
    display: flex;
    justify-content: space-between;
-   gap: 20px;
 }
-
+.footer-item h2{
+   display: grid;
+   gap:10%;
+}
 .footer-logo {
    width: 63px;
    height: 56px;
-
+    margin:10px;
+    
 }
 .footer-item h2 {
    font-size: 20px;
    font-weight: 800;
-   margin-bottom: 19px;
+   padding-bottom:10px;
    text-transform: uppercase;
-   margin-bottom: 0;
+   margin-bottom: -12px;
    line-height: 1.5;
+   padding-right: 179px;
+   margin-top:10px;
+   padding: -1px;
+  
 }
 
 
 .footer-list li {
-   margin-bottom: 9px;
+   margin-bottom: 19px;
    font-family: 'Nunito Sans';
    font-size: 15px;
    color: #FAF9F9;
    font-weight: 700;
    line-height: 24px;
+   
 }
 
 
@@ -422,6 +432,7 @@ header {
    color: #DEDEDE;
    text-decoration: none;
    font-weight: 400;
+  
 }
 
 .footer-list a:hover {
@@ -430,7 +441,7 @@ header {
    color: #FBB731;
    text-decoration: none;
    font-weight: 400;
-
+ 
 }
 
 .footer-item span {
@@ -441,7 +452,7 @@ header {
    font-style: normal;
    font-weight: 400;
    font-size: 15px;
-
+  
 }
 
 .footer-item li {
@@ -453,6 +464,7 @@ header {
    font-weight: 700;
    font-size: 15px;
    line-height: 24px;
+   
 }
 
 .footer-list-tel {
@@ -679,8 +691,9 @@ header {
 .modal .header-nav {
    flex-direction: column;
    align-items: center;
-   gap: 23px;
+   gap: 22px;
    margin: 0;
+   padding: 14px;
 }
 
 
@@ -716,9 +729,14 @@ header {
 
 @media (max-width: 1001px) {
    .container {
-      max-width: 765px;
+      max-width: 768px;
    }
-
+   @media (max-width: 770px){
+      .header-logo{
+         width:150px;
+         height:47.81px;
+      }
+   }
    @media (max-width: 765px) {
       .header-logo {
          width: 116px;
@@ -728,14 +746,14 @@ header {
 
    .header-nav {
       gap: 22px;
+      padding: 24px;
    }
 
    .header-item {
-      flex-basis: 78.5%;
+      flex-basis: 81.5%;
    }
-
    .bg {
-      margin-bottom: 33px;
+      margin-bottom: 72px;
    }
 
    .banner-box {
@@ -780,11 +798,23 @@ header {
 
       display: none;
    }
-    
+}
    .header {
       gap: 21px;
-     
+      padding-top: 25px;
+      padding-bottom: 25px;
    }
+   @media(max-width:540px){
+.header{
+   padding-top:10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+}
+@media(max-width:360px){
+   .footer{
+      margin-bottom: 61px;
+   }
+}
    .menu-other .container {
       padding-right: 0;
    }
@@ -863,6 +893,7 @@ header {
 
    .menu-other {
       height: 108vw;
+      margin-bottom: 104px;
    }
 
    .menu-other .menu-grid {
@@ -941,4 +972,6 @@ header {
          margin-bottom: 24px;
       }
    }
+ 
+
    
